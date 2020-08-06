@@ -12,7 +12,7 @@ Use docker to generate an image containing the NES rom.
 ```
 docker build -t gameover:latest .
 ```
-Then extract the artifict ROM.
+Then extract the ROM.
 
 ```
 docker cp $(docker create gameover:latest):/build/gameover.nes gameover.nes
