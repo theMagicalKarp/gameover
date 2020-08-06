@@ -1,8 +1,8 @@
 # GAME OVER
-This was a project to better understand how the NES works and understanding of the 6502 processor.
+This was a project to better understand how the NES and 6502 processor works.
 The ROM artifact is nothing more than a visual and audio demo of some basic NES capabilities.
 
-Demo: [sheehy.network/nes](sheehy.network/nes)
+Demo: [https://sheehy.network/nes](https://sheehy.network/nes)
 
 ![](https://i.imgur.com/6zYA5SY.gif)
 
