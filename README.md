@@ -2,7 +2,7 @@
 This was a project to better understand how the NES and 6502 processor works.
 The ROM artifact is nothing more than a visual and audio demo of some basic NES capabilities.
 
-Demo: [https://sheehy.network/nes](https://sheehy.network/nes)
+Demo: [https://nes.sheehy.network/](https://nes.sheehy.network/)
 
 ![](https://i.imgur.com/6zYA5SY.gif)
 
