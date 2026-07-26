@@ -1,0 +1,20 @@
+{
+  "name": "gameover-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Browser player for the GAME OVER NES ROM",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "jsnes": "^2.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
+  }
+}

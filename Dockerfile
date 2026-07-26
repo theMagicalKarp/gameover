@@ -1,12 +1,8 @@
-FROM ubuntu:latest
+FROM ubuntu:26.04
 
-RUN apt update && apt install -y wget gnupg
-
-# see http://software.opensuse.org/download.html?project=home%3Astrik&package=cc65
-RUN wget http://download.opensuse.org/repositories/home:strik/Debian_8.0/Release.key -O /tmp/opensuse.key
-RUN apt-key add - < /tmp/opensuse.key
-RUN echo 'deb http://download.opensuse.org/repositories/home:/strik/Debian_8.0/ /' >> /etc/apt/sources.list.d/cc65.list
-RUN apt update && apt install -y --allow-unauthenticated cc65
+RUN apt-get update && \
+  apt-get install -y --no-install-recommends cc65 && \
+  rm -rf /var/lib/apt/lists/*
 
 WORKDIR /build
 COPY . /build

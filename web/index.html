@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vendored from https://avatars.githubusercontent.com/u/2288912 so the
+         icon doesn't depend on GitHub being reachable. -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>GAME OVER — NES</title>
+    <meta
+      name="description"
+      content="An in-browser player for the GAME OVER NES ROM, an audio-visual demo built with cc65 and neslib."
+    />
+  </head>
+  <body>
+    <div class="stage">
+      <!-- jsnes appends its 256x240 <canvas> into this element. -->
+      <div id="screen" class="stage__screen"></div>
+
+      <!-- Browsers won't let an AudioContext start without a user gesture, so
+           the ROM can't boot with sound until something is clicked. -->
+      <button id="start" class="start" type="button" hidden>
+        <span aria-hidden="true">▶</span>
+      </button>
+
+      <p id="error" class="error" role="alert" hidden></p>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
