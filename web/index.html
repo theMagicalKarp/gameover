@@ -14,8 +14,9 @@
   </head>
   <body>
     <div class="stage">
-      <!-- jsnes appends its 256x240 <canvas> into this element. -->
-      <div id="screen" class="stage__screen"></div>
+      <!-- The NES framebuffer. CSS scales it up; the backing store stays
+           256x240 and is written to directly. -->
+      <canvas id="screen" class="stage__screen" width="256" height="240"></canvas>
 
       <!-- Browsers won't let an AudioContext start without a user gesture, so
            the ROM can't boot with sound until something is clicked. -->

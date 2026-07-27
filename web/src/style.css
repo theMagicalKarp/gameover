@@ -26,18 +26,12 @@ body {
 }
 
 .stage__screen {
-  /* jsnes's fitInParent() measures this box, so it needs real dimensions. */
+  display: block;
   width: 100%;
   aspect-ratio: 256 / 240;
   background: #000;
-  display: flex;
-}
-
-.stage__screen canvas {
-  display: block;
-  /* jsnes sets image-rendering inline, so !important is needed to guarantee
-     nearest-neighbour scaling instead of a blurry upscale. */
-  image-rendering: pixelated !important;
+  /* Nearest-neighbour, so the upscale stays sharp instead of blurring. */
+  image-rendering: pixelated;
 }
 
 /* Full-bleed click target, so the gesture that unblocks audio is unmissable. */
